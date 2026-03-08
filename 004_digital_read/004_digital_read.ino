@@ -12,9 +12,11 @@ void loop() {
   if(digitalRead(sw1)==LOW){
     Serial.println("SW1 is pressed");
     delay(600);
+    while(digitalRead(sw1)==LOW);
   }
   if(digitalRead(sw2)==LOW){
     Serial.println("SW2 is pressed");
     delay(600);
+    while(digitalRead(sw2)==LOW);
   }
 }
