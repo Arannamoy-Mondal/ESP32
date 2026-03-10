@@ -3,7 +3,7 @@
 
 const char* ssid = "Dar";
 const char* password = "123456789";
-
+int pin2=2;
 WebServer server(80);
 
 
@@ -66,8 +66,14 @@ void setup() {
   server.on("/get_input", handleInput);
 
   server.begin();
+
+  pinMode(pin2,OUTPUT);
 }
 
 void loop() {
   server.handleClient();
+  digitalWrite(pin2,HIGH);
+  delay(5000);
+  digitalWrite(pin2,LOW);
+  delay(5000);
 }
