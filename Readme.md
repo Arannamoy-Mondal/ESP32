@@ -1,6 +1,8 @@
 ### Arduino IDE set up for ubuntu
 ```bash
 sudo usermod -aG dialout $USER
+```
+```bash
 reboot
 ```
 # Free RTOS
