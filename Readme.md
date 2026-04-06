@@ -1,4 +1,9 @@
 ### Arduino IDE set up for ubuntu
+
+```bash
+sudo apt install libfuse2 # for running appimage in ubuntu
+```
+
 ```bash
 sudo usermod -aG dialout $USER
 ```
